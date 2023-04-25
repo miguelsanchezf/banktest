@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "b8dd2871-1c30-488f-a576-c7f43db853be",
+		"name": "Movimiento",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ObtenerMovimiento",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/movimiento",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"movimiento"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteMovimiento",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/movimiento/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"movimiento",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearMovimiento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fecha\":\"2023-04-24\",\r\n    \"tipoMovimiento\":\"Credito\",\r\n    \"valor\":575,\r\n    \"saldo\":1000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/movimiento",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"movimiento"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ActualizarMovimiento",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fecha\": \"2023-04-24T00:00:00.000+00:00\",\r\n    \"tipoMovimiento\": \"Debito\",\r\n    \"valor\": 600.0,\r\n    \"saldo\": 1000.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/movimiento/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"movimiento",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

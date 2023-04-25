@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "4c4dd800-590d-43da-8d43-dbdf47fed34b",
+		"name": "Cuenta",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ObtenerCuentas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/cuenta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"cuenta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerCuentaID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/cuenta/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"cuenta",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AgregarCuenta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numeroCuenta\":\"478758\",\r\n    \"tipoCuenta\":\"Ahorro\",\r\n    \"saldoInicial\":2000,\r\n    \"estado\": true   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/cuenta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"cuenta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ActualizarCuenta",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numeroCuenta\":\"478758\",\r\n    \"tipoCuenta\":\"Corriente\",\r\n    \"saldoInicial\":2000,\r\n    \"estado\": true   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/cuenta/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"cuenta",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteCuenta",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Luisa\",\r\n    \"genero\":\"F\",\r\n    \"edad\":28,\r\n    \"identificacion\":\"7778899\",\r\n    \"direccion\":\"Lima\",\r\n    \"telefono\":\"66998877\",\r\n    \"clienteid\":\"luisa123\",\r\n    \"contrasena\":\"123456\",\r\n    \"estado\": true    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/cuenta/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"cuenta",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
